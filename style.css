@@ -117,7 +117,7 @@ body {
     box-shadow: .05rem .05rem .5rem var(--shadow-color);
 }
 
-@media (min-width: 450px) and (max-width: 600px) {
+@media (min-width: 450px) and (max-width: 800px) {
     .title {
         margin-bottom: 3rem;
     }
