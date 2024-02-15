@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/lock.svg" type="image/x-icon">
+    <title>Password generator</title>
+</head>
+<body>
+    <main class="main">
+        <h1 class="title">Password Generator</h1>
+        <div class="container">
+            <span class="password-display"></span>
+            <img src="img/reload.svg" class="reload-img" alt="reaload">
+            <button class="copy-btn">copy</button>
+        </div>
+        <div class="container">
+            <label for="input-range" class="label">Password length:</label>
+            <span class="range-display">8</span>
+            <input type="range" class="input-range" id="input-range" min="1" max="36"  value="8">
+        </div>
+        <div class="container">
+            <p class="text">Character used:</p>
+            <span class="character-used selected" id="character-lowercase">abc</span>
+            <span class="character-used" id="character-uppercase">ABC</span>
+            <span class="character-used" id="character-numbers">123</span>
+            <span class="character-used" id="character-symbols">!@#</span>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
