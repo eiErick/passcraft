@@ -32,6 +32,16 @@ body {
     background-color: var(--bg-color);
 }
 
+.banner {
+    display: none;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    padding: .5rem;
+    background-color: rgb(50, 50, 50);
+    top: 0;
+}
+
 .main {
     display: flex;
     flex-direction: column;

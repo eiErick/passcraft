@@ -43,6 +43,7 @@ characterUsed.forEach((character) => {
     });
 });
 
+printBanner();
 generatePassword(document.querySelectorAll(".selected"));
 
 function generatePassword(selectedsCharacters) {
@@ -91,4 +92,12 @@ function copied() {
         copyBtn.style.background = "var(--primary-color)";
         copyBtn.style.cursor = "pointer";
     }, 2000);
+}
+
+function printBanner() {
+    if (window.location.href === "https://eierick.github.io/passcraft/") {
+        const banner = document.querySelector(".banner");
+        if (navigator.oscpu !== "Linux x86_64") return;
+        banner.style.display = "flex";
+    }
 }
