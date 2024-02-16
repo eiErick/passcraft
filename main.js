@@ -3,9 +3,9 @@ const { app, BrowserWindow } = require("electron");
 const createWindow = () => {
     const win = new BrowserWindow({
         windth: 800,
-        height: 630,
-        minWidth: 440,
-        minHeight: 630,
+        height: 510,
+        minWidth: 400,
+        minHeight: 510,
     });
     win.loadFile("index.html");
     win.setMenu(null);
