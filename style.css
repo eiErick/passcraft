@@ -132,45 +132,7 @@ body {
     box-shadow: .05rem .05rem .5rem var(--shadow-color);
 }
 
-@media screen and (min-width: 430px) and (max-width: 700px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .container-password-display {
-        margin-bottom: 6rem;
-    }
-    
-    .container .password-display {
-        font-size: 1.2em;
-        width: 28rem;
-    }
-    
-    .subcontainer {
-        width: 15rem;
-        margin-top: 1rem;
-    }
-    
-    .container .copy-btn {
-        padding: 1rem 4.3rem;
-        font-size: 1em;
-    }
-
-    .container-password-lenght {
-        margin-bottom: 12rem;
-    }
-
-    .container .input-range {
-        width: 27rem;
-    }
-
-    .container .character-used {
-        margin: .4rem 0;
-        padding: .6rem 4rem;
-    }
-}
-
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 750px) {
     .container {
         flex-direction: column;
     }
@@ -180,13 +142,24 @@ body {
         max-width: 23rem;
     }
 
+    .subcontainer {
+        width: 12rem;
+        margin-top: 1rem;
+    }
+
     .container img {
         height: 2.2rem;
     }
+
     
     .container .copy-btn {
         padding: .5rem 3.3rem;
         font-size: 1em;
+        margin-bottom: 2rem;
+    }
+    
+    .container-password-lenght {
+        margin-bottom: 9rem;
     }
 
     .container .input-range {
