@@ -8,7 +8,7 @@
     "build": "electron-builder"
   },
   "build": {
-    "icon": "./build/icons/",
+    "icon": "./build/icon/",
     "productName": "passcraft",
     "linux": {
       "target": [
