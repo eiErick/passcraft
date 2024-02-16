@@ -117,7 +117,7 @@ body {
     box-shadow: .05rem .05rem .5rem var(--shadow-color);
 }
 
-@media screen and (min-width: 450px) and (max-width: 1000px) {
+@media screen and (min-width: 470px) and (max-width: 1400px) {
     .title {
         margin-bottom: 3rem;
     }
@@ -159,17 +159,26 @@ body {
         margin-bottom: 1rem;
     }
 
+    .container {
+        flex-direction: column;
+        width: 100vw;
+        height: 10rem;
+    }
+
     .container .password-display {
         font-size: 1em;
         max-width: 23rem;
+        background-color: red;
     }
 
     .container img {
         height: 3rem;
+        margin: .5rem;
     }
     
     .container .copy-btn {
         padding: .5rem 3.3rem;
+        font-size: 1em;
     }
 
     .container .input-range {
