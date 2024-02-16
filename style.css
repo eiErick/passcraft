@@ -28,12 +28,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    height: 95vh;
 }
 
 .title {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
 }
 
 .container {
@@ -41,8 +40,10 @@ body {
     align-items: center;
     justify-content: center;
     height: 2rem;
-    width: 100vw;
-    margin-bottom: 4rem;
+}
+
+.container-password-display {
+    margin-bottom: 3rem;
 }
 
 .container .password-display {
@@ -56,10 +57,17 @@ body {
     box-shadow: inset -.1rem -.1rem .5rem var(--shadow-color);
 }
 
+.subcontainer {
+    position: relative;
+    width: 8.8rem;
+}
+
 .container img {
+    position: absolute;
+    right: 0;
+    top: 0;
     cursor: pointer;
-    height: 2rem;
-    margin: .5rem;
+    height: 3.5rem;
     transition: transform 1s ease-in-out;
 }
 
@@ -68,13 +76,17 @@ body {
     padding: 1rem;
     border-radius: var(--radius);
     font-size: 1.2em;
-    margin: .5rem;
+    margin-left: .5rem;
     box-shadow: .1rem .1rem 1rem var(--shadow-color);
     cursor: pointer;
 }
 
 .container .copy-btn:hover {
     background-color: var(--primary-color-hover);
+}
+
+.container-password-lenght {
+    margin-bottom: 3rem;
 }
 
 .container .label {
@@ -92,7 +104,10 @@ body {
 .container .input-range {
     width: 18rem;
     cursor: pointer;
-    margin-left: 1rem;
+}
+
+.container-character-used {
+    margin-bottom: 3rem;
 }
 
 .container .text {
@@ -117,25 +132,23 @@ body {
     box-shadow: .05rem .05rem .5rem var(--shadow-color);
 }
 
-@media screen and (min-width: 470px) and (max-width: 1400px) {
-    .title {
-        margin-bottom: 3rem;
-    }
-
+@media screen and (min-width: 430px) and (max-width: 700px) {
     .container {
         flex-direction: column;
-        width: 100vw;
-        height: 10rem;
     }
 
+    .container-password-display {
+        margin-bottom: 6rem;
+    }
+    
     .container .password-display {
         font-size: 1.2em;
         width: 28rem;
     }
-
-    .container img {
-        height: 4rem;
-        margin: .5rem;
+    
+    .subcontainer {
+        width: 15rem;
+        margin-top: 1rem;
     }
     
     .container .copy-btn {
@@ -143,37 +156,32 @@ body {
         font-size: 1em;
     }
 
+    .container-password-lenght {
+        margin-bottom: 12rem;
+    }
+
     .container .input-range {
         width: 27rem;
-        margin-bottom: 1rem;
     }
 
     .container .character-used {
         margin: .4rem 0;
-        padding: 1rem 4rem;
+        padding: .6rem 4rem;
     }
 }
 
 @media screen and (max-width: 460px) {
-    .title {
-        margin-bottom: 1rem;
-    }
-
     .container {
         flex-direction: column;
-        width: 100vw;
-        height: 10rem;
     }
 
     .container .password-display {
         font-size: 1em;
         max-width: 23rem;
-        background-color: red;
     }
 
     .container img {
-        height: 3rem;
-        margin: .5rem;
+        height: 2.2rem;
     }
     
     .container .copy-btn {
@@ -183,7 +191,6 @@ body {
 
     .container .input-range {
         width: 20rem;
-        margin-bottom: 2rem;
     }
 
     .container .character-used {
